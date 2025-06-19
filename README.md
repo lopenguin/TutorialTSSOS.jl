@@ -15,17 +15,15 @@ julia --project
 ```
 
 You'll need to manually add TSSOS and my helper package SimpleRotations:
-```
-using Pkg
-Pkg.add(url=["https://github.com/lopenguin/SimpleRotations.jl", "https://github.com/lopenguin/TSSOS"])
+```julia
+(TutorialTSSOS) pkg> add https://github.com/lopenguin/SimpleRotations.jl, https://github.com/lopenguin/TSSOS
 # you can use the official TSSOS instead for the features in `simple`
 ```
 
-In the repo directory, run `julia` and type `]` to enter package mode. Then type `instantiate` to download all dependencies. The key dependency is [TSSOS](https://github.com/wangjie212/TSSOS).
-
-TODO: 
-- may be an issue with my version of TSSOS.
-- Mention simplerotations
+You are now ready to run either example script! Return to the Julia REPL and type:
+```julia
+include("scripts/example_pnp_simple.jl")
+```
 
 ## Certifiable Perspective-N-Point
 Plan:
