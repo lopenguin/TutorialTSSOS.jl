@@ -41,7 +41,7 @@ I briefly review the backprojection form of perspective-n-point (PnP) and state 
 The maximum likelihood form of the backprojection PnP problem is given by the following optimization problem:
 
 $$
-\min_{\substack{R\in\mathrm{SO}(3)\\ t\in\mathbb{R}^3}} \sum_{i=1}^N \frac1{\sigma_i^2} \|(I_3 - y_i \hat{e}_3^T)K(R b_i + t)\|_2^2
+\min_{\substack{R\in\mathrm{SO}(3)\\\\ t\in\mathbb{R}^3}} \sum_{i=1}^N \frac1{\sigma_i^2} \|(I_3 - y_i \hat{e}_3^T)K(R b_i + t)\|_2^2
 $$
 $$
 \text{s.t. }\ \ \hat{e}_3^T K(R b_i + t) > 0,\ i=1,...,N
